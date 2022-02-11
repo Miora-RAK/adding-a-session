@@ -1,0 +1,138 @@
+/* ------ Reset ------- */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+body {
+  background: linen;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ------ Navigation ------- */
+
+nav {
+  position: fixed;
+  z-index: 1000;
+  padding-left: 25em;
+  width: 100%;
+  height: 5em;
+}
+
+nav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 2em;
+}
+
+nav a {
+  padding: 14px 16px;
+  display: block;
+  font-size: 17px;
+  text-align: center;
+  color: #3d405b;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: burlywood;
+}
+
+nav.item-navigation {
+  display: none;
+}
+
+.logo {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #3d405b;
+}
+
+/* ------ home ------- */
+h1 {
+  color: #3d405b;
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 5em;
+  padding-bottom: 0.5em;
+  margin-left: 8vw;
+  white-space: nowrap;
+}
+
+/* ------ login ------- */
+
+p {
+  color: #3d405b;
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  margin-left: 8vw;
+  white-space: nowrap;
+}
+form {
+  width: 50%;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+label,
+input {
+  width: 100%;
+  font-size: 20px;
+  margin: 5px 20vw;
+  color: #3d405b;
+  font-family: Montserrat, Helvetica, sans-serif;
+  font-size: 20px;
+  padding-top: 1em;
+}
+form input {
+  padding: 10px 5px;
+}
+
+input:nth-child(4) {
+  margin-bottom: 20px;
+}
+
+label:nth-child(5) {
+  margin-bottom: 10px;
+}
+
+.login-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 18px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #3d405b;
+  color: #f1f1f1;
+}
+
+@media screen and (max-width: 1100px) {
+  #option {
+    width: 80%;
+  }
+}
