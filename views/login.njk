@@ -1,0 +1,14 @@
+{% extends "layout.njk" %}}
+{% block content %}
+    <h1> Welcome!  </h1>
+    <p> Let's sign in you </p>
+    <div id = "option">
+    <form action="/private" method = "post" >
+          <label for="username">Enter Username</label><br>
+          <input type="text" id="username" name="username" placeholder="username" required><br>
+          <label for="password">Enter Password</label><br>
+          <input type="password" id="password" name="password"  placeholder="password" required><br><br>
+          <button class = "login-button"type="submit">Log in</button>
+    </div>
+</form>
+{% endblock %}

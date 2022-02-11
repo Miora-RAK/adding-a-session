@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Book Library World</title>
+    <!-- CSS FILES -->
+
+     <link rel="stylesheet" href="css/layout.css" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+  </head>
+  <body>
+<!-- NAVBAR START -->
+    <nav>
+      <ul>
+        <li><a href="/" class="item-navigation">Home</a></li>
+        <li>
+          <a href="#" class="item-navigation">Catalogue</a>
+        </li>
+        <li><a href="#" class="item-navigation">Foryou</a></li>
+        <li><a href="#" class="item-navigation">Contact</a></li>
+         <li>
+          <a href="/basket" class="item-navigation">
+            <img class="logo" src="/images/basket.svg" alt="basket" />
+          </a>
+        </li>
+        <li>
+          <a href="/login" class="item-navigation">
+            <img class="logo" src="/images/login-solid.svg" alt="login" />
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <div class = "book-list">
+    {% block content %} {% endblock %}
+    </div>
+
+   </body>
+   <footer>
+   </footer>
+</html>
